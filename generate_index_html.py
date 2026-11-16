@@ -1851,7 +1851,6 @@ async function openAjusterRepartitionModal(articleId) {
   const locP = parseInt(article.quantite_en_location) || 0;
   const dispoP = getDispo(article);
 
-  const capArticle = getCapaciteCage(article);
   const cagesTot = Math.floor(totP / capArticle);
   const cagesChant = Math.floor(chantP / capArticle);
   const cagesLoc = Math.floor(locP / capArticle);
